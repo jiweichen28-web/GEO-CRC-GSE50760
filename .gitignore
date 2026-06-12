@@ -1,0 +1,9 @@
+# .gitignore for GEO-CRC-GSE50760
+# 不上传原始数据文件
+
+data/
+*.rds
+*.RData
+*.gz
+*.tar
+*.zip
