@@ -45,9 +45,36 @@
 各组下调基因数均多于上调，提示 CRC 特征以正常肠上皮功能基因大规模丢失为主。
 最显著下调基因：OTOP2、BEST4（正常肠上皮标志物）；上调基因含 MMP1、WNT2（肿瘤侵袭相关）。
 
-- `results/figures/02_QC.pdf` — 箱线图 + PCA（2页）
-- `results/figures/03_DEG.pdf` — 三组火山图（3页）+ 三组各自 Top50 热图（3页），共 **6页**
-- `results/figures/04_enrichment.pdf` — GO ORA / KEGG ORA / GSEA dotplot，覆盖 CRC 与 Meta 两个对比，共 **10页**
+**图件输出**
+
+QC：
+
+- `results/figures/02_QC_boxplot.pdf` / `.tif`
+- `results/figures/02_QC_PCA.pdf` / `.tif`
+
+差异表达：
+
+- `results/figures/03_DEG_volcano_CRC_vs_Normal.pdf` / `.tif`
+- `results/figures/03_DEG_volcano_Meta_vs_Normal.pdf` / `.tif`
+- `results/figures/03_DEG_volcano_Meta_vs_CRC.pdf` / `.tif`
+- `results/figures/03_DEG_heatmap_CRC_vs_Normal.pdf` / `.tif`
+- `results/figures/03_DEG_heatmap_Meta_vs_Normal.pdf` / `.tif`
+- `results/figures/03_DEG_heatmap_Meta_vs_CRC.pdf` / `.tif`
+
+富集分析：
+
+- `results/figures/04_GO_ORA_CRC_Up.pdf` / `.tif`
+- `results/figures/04_GO_ORA_CRC_Down.pdf` / `.tif`
+- `results/figures/04_GO_ORA_Meta_Up.pdf` / `.tif`
+- `results/figures/04_GO_ORA_Meta_Down.pdf` / `.tif`
+- `results/figures/04_KEGG_ORA_CRC_Up.pdf` / `.tif`
+- `results/figures/04_KEGG_ORA_CRC_Down.pdf` / `.tif`
+- `results/figures/04_KEGG_ORA_Meta_Up.pdf` / `.tif`
+- `results/figures/04_KEGG_ORA_Meta_Down.pdf` / `.tif`
+- `results/figures/04_GSEA_GO_CRC_vs_Normal.pdf` / `.tif`
+- `results/figures/04_GSEA_GO_Meta_vs_Normal.pdf` / `.tif`
+
+所有 PDF 均由 `cairo_pdf()` 输出；TIF 为 300 ppi。
 - `results/tables/DEG_CRC_vs_Normal.csv` / `DEG_Meta_vs_Normal.csv` / `DEG_Meta_vs_CRC.csv`
 - `results/tables/ORA_GO_CRC_Up.csv` / `ORA_GO_CRC_Down.csv` / `ORA_GO_Meta_Up.csv` / `ORA_GO_Meta_Down.csv`
 - `results/tables/ORA_KEGG_CRC_Up.csv` / `ORA_KEGG_CRC_Down.csv` / `ORA_KEGG_Meta_Up.csv` / `ORA_KEGG_Meta_Down.csv`
