@@ -7,3 +7,8 @@ data/
 *.gz
 *.tar
 *.zip
+
+# R 临时文件
+.Rhistory
+.Rproj.user/
+scripts/.Rhistory
