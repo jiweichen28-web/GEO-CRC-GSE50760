@@ -12,3 +12,6 @@ data/
 .Rhistory
 .Rproj.user/
 scripts/.Rhistory
+
+# 临时预览图
+_preview/
